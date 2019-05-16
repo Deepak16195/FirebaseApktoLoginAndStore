@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FirebaseDemo</string>
+    <string name="GoogleId">23184835558-gsdu2hilbnag1q75bd89mou9aksiu2ev.apps.googleusercontent.com</string>
+    <string name="loading">loading</string>
+</resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textWebEmailAddress"
+        android:hint="EmailID"/>
+
+    <EditText
+        android:id="@+id/etPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Password"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/rg_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="OR"
+        android:textStyle="bold"/>
+
+  </LinearLayout>
+
+
+
+  <LinearLayout
+      android:id="@+id/llProfile"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="20dp"
+      android:orientation="horizontal"
+      android:weightSum="3"
+      android:visibility="gone">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:layout_weight="2" >
+
+      <TextView
+          android:id="@+id/txtName"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:padding="5dp"
+          android:textSize="20dp" />
+
+      <TextView
+          android:id="@+id/txtEmail"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:padding="5dp"
+          android:textSize="18dp" />
+
+
+    </LinearLayout>
+
+
+  </LinearLayout>
+
+  <com.google.android.gms.common.SignInButton
+      android:id="@+id/btn_sign_in"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="20dp"/>
+
+  <Button
+      android:id="@+id/btn_sign_out"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="btn_logout_from_google"
+      android:layout_marginBottom="10dp"/>
+
+
+
+</LinearLayout>
